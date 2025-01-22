@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Created-By: Maven Jar Plugin 3.2.0
+Build-Jdk-Spec: 17
+Implementation-Title: sms-activation-service
+Implementation-Version: 0.0.1-SNAPSHOT
+Main-Class: com.example.smsservice.MainApp
+
