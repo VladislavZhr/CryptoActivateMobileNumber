@@ -1,29 +1,67 @@
-# CryptoActivateMobileNumber
-Project Type: Commercial
+# 💸 CryptoPayment & Virtual Number Management Service
 
-Description: The project is a highly reliable and functional service designed to process payments through crypto-payment gateways, manage number activation and provide customers with a full cycle of operations related to the use of virtual numbers and crypto-payments.
+## Overview
 
-The service provides a user-friendly interface for managing users, transactions, and integration with cryptocurrency payment systems. Thanks to its capabilities, users can easily perform financial transactions, pay for services, and administrators can manage all processes through an intuitive interface.
-Main functions of the project:
+This project is a **commercial-grade, secure, and user-friendly service** designed to handle cryptocurrency payments and manage virtual number activations. It provides a complete operational cycle for users and administrators, supporting seamless financial transactions and real-time monitoring.
 
-Creating and managing payments through cryptocurrency gateways (support for multiple cryptocurrency systems, including BTC, ETH, USDT and others).
-Processing of automatic POST requests (webhooks) from the payment gateway with transaction status updates.
-Realization of multi-level authentication and user management.
-Real-time transaction list display with filtering and sorting.
-Support for payment status notifications.
-High level of security, including request signature verification and secure data storage.
-Security: To ensure the privacy and security of project data:
+> 🚀 Built for reliability, automation, and simplicity in handling **crypto-payments** and **virtual number services**.
 
-All sensitive data such as secret keys, signatures, and security settings have been removed from the description and examples.
-Strict validation of JWT tokens for authentication and authorization has been implemented.
-Provided validation of incoming data to protect against request forgery and attacks.
+---
 
-Technology Stack:
+## 🔑 Key Features
 
-Backend: Spring Boot, Hibernate, PostgreSQL.
-Frontend: JavaScript, integration with Wix or other platform.
-Integrations: Crypto-payment gateway (e.g. CryptoCloud) for transaction processing.
-Infrastructure: Deployment on Heroku with HTTPS support.
-Commercial Purpose: The service is designed to be used for commercial purposes. Its main purpose is to automate payment processing and provide a convenient tool to manage customers, transactions and virtual numbers.
+- **Multi-Gateway Crypto Payments**  
+  Integration with popular crypto gateways (e.g., CryptoCloud) to support BTC, ETH, USDT, and more.
 
-Note: Some data related to security and project specifics have been removed from the description to prevent leakage of confidential information and ensure system reliability.
+- **Webhook Handling**  
+  Automatic processing of `POST`-requests from payment providers with real-time status updates.
+
+- **Secure Authentication**  
+  JWT-based multi-level authentication and user role management.
+
+- **Transaction Dashboard**  
+  Real-time display of transactions with filters, sorting, and search capabilities.
+
+- **Payment Notifications**  
+  Email or in-app notifications about payment status.
+
+- **Robust Security**  
+  - Signature verification on incoming requests  
+  - Strict JWT validation  
+  - Input validation to prevent forgery and injection attacks  
+  - Secure handling of secret keys and sensitive configuration
+
+---
+
+## ⚙️ Technology Stack
+
+| Layer       | Technology                               |
+|-------------|------------------------------------------|
+| Backend     | Java 17, Spring Boot, Hibernate          |
+| Database    | PostgreSQL                               |
+| Frontend    | React                                    |
+| Integrations| CryptoCloud (or similar crypto gateway)  |
+| Deployment  | Heroku with HTTPS support                |
+
+---
+
+## 🧩 Architecture
+
+The system follows a modular architecture with clear separation of responsibilities:
+
+- **Controller Layer:** Handles HTTP requests, authorization, validation.
+- **Service Layer:** Business logic for payments, transactions, user flows.
+- **Persistence Layer:** Data access through Hibernate and PostgreSQL.
+- **Integration Layer:** Communication with crypto-gateways and webhook handling.
+- **Security Module:** JWT filters, signature verification, input sanitation.
+
+---
+
+## 🛠️ Deployment
+
+### Requirements
+
+- Java 17+
+- PostgreSQL database
+- Heroku account with SSL/HTTPS enabled
+
